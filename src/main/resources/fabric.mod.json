@@ -1,0 +1,32 @@
+{
+    "schemaVersion": 1,
+    "id": "pathfindcmd",
+    "version": "1.1.0",
+    "name": "mob pathfind command",
+    "description": "Adds /mobpathfind command to force a mob to move somewhere.",
+    "authors": [
+        {
+            "name": "InukX"
+        }
+    ],
+    "contact":{
+        "issues":"https://github.com/inuk84/mob-pathfind-command",
+        "sources":"https://github.com/inuk84/mob-pathfind-command/issues"
+    },
+    "icon":"assets/pathfindcmd/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "inuk.pathfindcmd.PathfindCmd"
+        ]
+    },
+    "mixins": [
+        "pathfindcmd.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.19.0",
+        "minecraft": ">=26.1 <26.4",
+        "java": ">=25",
+        "fabric-api": "*"
+    }
+}
